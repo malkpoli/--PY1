@@ -2,9 +2,6 @@ import json
 
 INPUT_FILE = "input.csv"
 
-
-def csv_to_list_dict() -> list[dict]:
-    ...  # TODO реализовать конвертер из csv в json
 def csv_to_list_dict(filename, delimiter=',', new_line='\n') -> list[dict]:
     with open(filename) as f:
         result = []
